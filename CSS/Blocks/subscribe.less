@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.subscribe {
+    padding: 4.53rem 0 4rem;
+    text-align: center;
+
+    @media @mobile-sm {
+        padding: 2.53rem 0 1rem;
+    }
+}
+
+.subscribe__title {
+    margin-bottom: 1.09em;
+
+    font-size: 3.66rem;
+    font-weight: 600;
+    color: @black;
+
+    @media @mobile-sm {
+        font-size: 2.8rem;
+    }
+
+    @media @mobile-very-sm {
+        font-size: 2rem;
+    }
+}
+
+.input {
+    padding: 1.95em;
+
+    display: block;
+    height: 5.37em;
+    width: 100%;
+    max-width: 800px;
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: inherit;
+
+    color: fade(@black, 50%);
+    background-color: @white;
+    border: 0;
+    border-radius: 1.45em;
+
+    &:focus {
+        outline: none;
+        border: 1px solid orangered;
+    }
+
+    @media @mobile-sm {
+        font-size: 1.4rem;
+    }
+
+    @media @mobile-very-sm {
+        font-size: 1.2rem;
+    }
+}

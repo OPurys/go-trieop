@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.flex {
+    display: flex;
+    align-items: center;
+
+    @media @mobile-sm {
+        justify-content: center;
+    }
+}
+
+.position {
+    position: relative;
+    
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.hidden {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+

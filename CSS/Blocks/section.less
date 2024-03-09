@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.section {
+    padding: 7.66rem 0 4.46rem;
+    text-align: center;
+
+    @media @mobile-sm {
+        padding: 3.66rem 0 1.46rem;
+    }
+}
+
+.section__inner {
+    padding: 7.66rem 0;
+
+    background-color: @white;
+    border-radius: 4rem;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 56px;
+        left: 74px;
+
+        width: 63px;
+        height: 83px;
+
+        background: url("../img/section/Group 2.png");
+
+        @media @tablet {
+            bottom: 25px;
+            left: 10px;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 74px;
+        right: 80px;
+
+        width: 63px;
+        height: 83px;
+
+        background: url("../img/section/Group 1.png");
+
+        @media @tablet {
+            top: 30px;
+            right: 10px;
+        }
+    }
+}
+
+.section__title {
+    margin-bottom: .66em;
+
+    font-size: 3rem;
+    font-weight: 500;
+    color: @black;
+
+    @media @mobile-sm {
+        font-size: 2.3rem;
+    }
+
+    @media @mobile-very-sm {
+        font-size: 1.8rem;
+    }
+}
+
+.section__text {
+    margin-bottom: 2em;
+
+    font-size: 2rem;
+    font-weight: 400;
+    color: fade(@black, 50%);
+
+    @media @mobile-sm {
+        font-size: 1.5rem;
+    }
+
+    @media @mobile-very-sm {
+        font-size: 1.2rem;
+    }
+}

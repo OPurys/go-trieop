@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    &--big {
+        max-width: 1380px;
+        margin: 0 0 0 auto;
+        padding: 0;
+        padding-left: 1rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        @media @tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media @mobile-sm {
+            max-width: 1240px;
+            padding: 0 1rem;
+            margin: 0 auto;
+        }
+    }
+}

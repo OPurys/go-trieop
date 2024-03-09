@@ -1,0 +1,27 @@
+// main: ../style.less
+
+.footer {
+    padding: 3.93rem 0 4.93rem;
+
+    @media @mobile-sm {
+        padding: 1.93rem 0;
+    }
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @mobile-sm {
+        padding: 0 1rem;
+    }
+}
+
+.user--footer a {
+    color: #FF7C4E;
+}
+
+.nav__link--footer {
+    color: fade(@black, 50%);
+}

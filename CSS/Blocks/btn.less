@@ -1,0 +1,201 @@
+// main: ../style.less
+
+.btn {
+    display: inline-block;
+    padding: 1.08em 1.92em;
+
+    font-size: 1.66rem;
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: inherit;
+    color: @white-shade;
+
+    background: @gradient;
+    border: 0;
+    border-radius: 1.08em;
+    cursor: pointer;
+
+    @media @mobile-sm {
+        font-size: 1.4rem;
+    }
+
+    @media @mobile-very-sm {
+        font-size: 1.2rem;
+    }
+
+    &--thin {
+        margin-bottom: .38em;
+        padding: .66em 1.72em;
+
+        border-radius: .83em;
+        background: fade(@white, 25%);
+
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: @white;
+
+        @media @mobile-sm {
+            font-size: 1rem;
+        }
+
+        @media @mobile-very-sm {
+            font-size: .8rem;
+        }
+    }
+
+    &--sm {
+        padding: 1.25em 2.25em;
+
+        font-size: 1.33rem;
+        font-weight: 600;
+        color: @white-shade;
+        border-radius: 1.35em;
+
+        @media @mobile-sm {
+            font-size: 1.15rem;
+        }
+
+        @media @mobile-very-sm {
+            font-size: 1rem;
+        }
+    }
+
+    &--sm--long {
+        font-size: 1.33rem;
+        padding: 1.25em 2.75em;
+
+        @media @mobile-sm {
+            font-size: 1.15rem;
+        }
+
+        @media @mobile-very-sm {
+            font-size: 1rem;
+        }
+    }
+
+    &__img {
+
+        @media @mobile-sm {
+            width: 10px;
+        }
+    }
+
+    &--slider {
+        padding: 1.73rem;
+
+        border-radius: 50%;
+        font-size: 0;
+
+        position: absolute;
+        left: -25px;
+        top: 40%;
+        z-index: 1;
+
+        @media @mobile {
+            padding: 1.3rem;
+            left: -15px;
+        }
+
+        @media @mobile-sm {
+            padding: 1rem;
+        }
+
+        @media @mobile-very-sm {
+            padding: 0.7rem;
+            left: -10px;
+        }
+    }
+
+    &--sub {
+        padding: 1.36em 3.48em;
+
+        border-radius: 1.4em;
+
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        z-index: 1;
+
+        @media @mobile {
+            margin-top: 1rem;
+            width: 100%;
+
+            position: static;
+
+        }
+    }
+
+    &--about__form {
+        padding: 1em 1.7em;
+        font-size: 1.33rem;
+
+        @media @mobile-very-sm {
+            font-size: 1.13rem;
+        }
+    }
+
+    &--mdl,
+    &--mdr {
+        position: absolute;
+        top: 50%;
+
+        padding: 1.73rem;
+        font-size: 0;
+        border-radius: 50%;
+
+        transform: translateY(-50%);
+
+        @media @mobile-sm {
+            padding: 1.3rem;
+        }
+
+        @media @mobile-very-sm {
+            padding: .9rem;
+        }
+    }
+
+    &--mdl {
+        left: -25px;
+
+        @media @mobile-very-sm {
+            left: -15px;
+        }
+    }
+
+    &--mdr {
+        right: -25px;
+
+        @media @mobile-very-sm {
+            right: -15px;
+        }
+    }
+
+    &--close {
+        background: none;
+        border: none;
+        padding: .5rem;
+        cursor: pointer;
+
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        transition: transform .2s linear;
+
+        &:hover {
+            transform: translateY(-1px);
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+}
